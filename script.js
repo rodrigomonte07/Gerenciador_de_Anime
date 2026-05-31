@@ -17,7 +17,7 @@ const lista_de_animes = [
         titulo: "One Piece",
         genero: "Ação / Aventura / Fantasia",
         protagonista: "Monkey D. Luffy",
-        foto: "https://br.web.img2.acsta.net/c_310_420/pictures/16/02/03/17/11/571106.jpg"
+        foto: "https://br.web.img2.acsta.net/pictures/16/02/03/17/11/571106.jpg"
     },
     {
         titulo: "Naruto",
@@ -29,7 +29,7 @@ const lista_de_animes = [
         titulo: "Death Note",
         genero: "Suspense / Sobrenatural",
         protagonista: "Light Yagami",
-        foto: "https://br.web.img3.acsta.net/c_310_420/pictures/14/05/28/20/47/033239.jpg"
+        foto: "https://br.web.img3.acsta.net/pictures/14/05/28/20/47/033239.jpg"
     }
 ]
 
