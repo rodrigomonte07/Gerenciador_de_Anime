@@ -4,6 +4,7 @@ const genero = document.querySelector("#genero")
 const protagonista = document.querySelector("#protagonista")
 const foto = document.querySelector("#foto")
 const container = document.querySelector("#container")
+const campoPesquisa = document.querySelector("#pesquisa")
 
 const lista_de_animes = [
     {
@@ -35,12 +36,12 @@ const lista_de_animes = [
 formulario.addEventListener("submit", (event) => {
     event.preventDefault()
     const novo_anime = {
-        titulo: titulo.value.toUpperCase(),
-        genero: genero.value.toUpperCase(),
-        protagonista: protagonista.value.toUpperCase(),
+        titulo: titulo.value,
+        genero: genero.value,
+        protagonista: protagonista.value,
         foto: foto.value
     }
-    lista_de_animes.push(novo_anime)
+    lista_de_animes.unshift(novo_anime)
     montar_card()
     formulario.reset()
     titulo.focus()
@@ -49,7 +50,10 @@ formulario.addEventListener("submit", (event) => {
 function montar_card(){
     container.innerHTML = ""
 
-    lista_de_animes.forEach((element, index) => {
+    const termoBusca = campoPesquisa ? campoPesquisa.value.toLowerCase() : ""
+    const listaFiltrada = lista_de_animes.filter(anime => anime.titulo.toLowerCase().includes(termoBusca))
+
+    listaFiltrada.forEach((element, index) => {
 
         const novo_card = document.createElement("div")
         novo_card.className = "card"
@@ -71,9 +75,10 @@ function montar_card(){
         botao_excluir.textContent = "Excluir"
 
         botao_excluir.addEventListener("click", () => {
-            lista_de_animes.splice(index, 1)
-            montar_card()
-        })
+    const indiceOriginal = lista_de_animes.indexOf(element)
+    lista_de_animes.splice(indiceOriginal, 1)
+    montar_card()
+})
 
         novo_card.append(
             nova_foto,
@@ -88,3 +93,5 @@ function montar_card(){
 }
 
 montar_card()
+
+campoPesquisa.addEventListener("input", montar_card)
