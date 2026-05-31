@@ -11,7 +11,7 @@ const lista_de_animes = [
         titulo: "Dragon Ball Z",
         genero: "Ação / Aventura",
         protagonista: "Goku",
-        foto: "https://br.web.img3.acsta.net/pictures/16/03/01/16/59/300795.jpg"
+        foto: "https://upload.wikimedia.org/wikipedia/en/6/66/Dragon_Ball_Z.jpg"
     },
     {
         titulo: "One Piece",
@@ -23,7 +23,7 @@ const lista_de_animes = [
         titulo: "Naruto",
         genero: "Ação / Aventura / Ninja",
         protagonista: "Naruto Uzumaki",
-        foto: "https://br.web.img3.acsta.net/pictures/16/04/11/16/56/089875.jpg"
+        foto: "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg"
     },
     {
         titulo: "Death Note",
