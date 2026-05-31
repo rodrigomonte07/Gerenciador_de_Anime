@@ -23,7 +23,7 @@ const lista_de_animes = [
         titulo: "Naruto",
         genero: "Ação / Aventura / Ninja",
         protagonista: "Naruto Uzumaki",
-        foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJqXw2_NhVeMd3000II7ruLWkgMQh8hW--_Q&s"
+        foto: "https://cdn.europosters.eu/image/1300/84239.jpg"
     },
     {
         titulo: "Death Note",
