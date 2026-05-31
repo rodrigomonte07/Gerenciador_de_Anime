@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Animes</title>
+    <link rel="shortcut icon" href="./Gemini_Generated_Image.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gerenciador de Animes</h1>
 
-    <form id="formulario" class="formulario">
-        
-        <label for="titulo">Titulo</label>
-        <input type="text" id="titulo" name="titulo" placeholder="Título do Anime" required>
-        <br>
+    <header class="cabecalho">
+        <img src="./Gemini_Generated_Image.png" alt="logo">
+        <div class="busca-container">
+            <input type="text" id="pesquisa" placeholder="Pesquisar anime...">
+        </div>
+    </header>
 
-        <label for="genero">Gênero</label>
-        <input type="text" name="genero" id="genero" placeholder="Ex: Ação, Aventura, Suspense..." required>
-        <br>
+    <main class="principal">
 
-        <label for="protagonista">Protagonista</label>
-        <input type="text" name="protagonista" id="protagonista" placeholder=" Nome do Protagonista" required>
-        <br>
+        <div class="caixa">
+            <form id="formulario" class="formulario">
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Título do Anime" required>
+                <br>
+                <label for="genero">Gênero</label>
+                <input type="text" name="genero" id="genero" placeholder="Ex: Ação, Aventura, Suspense..." required>
+                <br>
+                <label for="protagonista">Protagonista</label>
+                <input type="text" name="protagonista" id="protagonista" placeholder=" Nome do Protagonista" required>
+                <br>
+                <label for="foto">Link da foto</label>
+                <input type="link" name="foto" id="foto" placeholder="Cole o link da URL da foto" required>
+                <br>
+                <button>Cadastrar</button>
+            </form>
+        </div>
 
-        <label for="foto">Link da foto</label>
-        <input type="link" name="foto" id="foto" placeholder="Cole o link da URL da foto" required>
-        <br>
+        <section id="container" class="container"></section>
 
-        <button>Cadastrar</button>
-    </form>
+    </main>
 
-    <section id="container" class="container"></section>
+    <footer class="rodape">
+    <p>© 2026 Anime Catalog • Desenvolvido por Rodrigo Monte</p>
+</footer>
 
     <script src="./script.js"></script>   
 </body>
