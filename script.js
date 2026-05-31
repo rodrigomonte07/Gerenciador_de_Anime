@@ -11,7 +11,7 @@ const lista_de_animes = [
         titulo: "Dragon Ball Z",
         genero: "Ação / Aventura",
         protagonista: "Goku",
-        foto: "https://upload.wikimedia.org/wikipedia/en/6/66/Dragon_Ball_Z.jpg"
+        foto: "https://m.media-amazon.com/images/M/MV5BNmFiM2FkYTYtY2FiOS00ZWJkLTkyOTgtNmFmODI4NjcwNDgzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
     },
     {
         titulo: "One Piece",
